@@ -1,4 +1,4 @@
-[Shell Script](https://img.shields.io/badge/Shell_Script-121011?style=for-the-badge&logo=gnu-bash&logoColor=white) [Made with Bash](https://img.shields.io/badge/Made%20with-Bash-1f425f.svg) [MIT License](https://img.shields.io/github/license/AAEmara/bash-user_management.svg)
+![Shell Script](https://img.shields.io/badge/Shell_Script-121011?style=for-the-badge&logo=gnu-bash&logoColor=white) ![Made with Bash](https://img.shields.io/badge/Made%20with-Bash-1f425f.svg) ![MIT License](https://img.shields.io/github/license/AAEmara/bash-user_management.svg)
 
 # User Management using Bash Script Project
 
@@ -54,7 +54,7 @@
   ![Ouput from the resulted command](./assets/images/3-command_output)
 
 ## Project's Demo Video
- [Watch the Demo Video](./assets/videos/bash_demo.mp4)
+[![Watch the Demo Video](https://img.youtube.com/vi/ysEbl0C9TSw/maxresdefault.jpg)](https://youtu.be/ysEbl0C9TSw)
 
 ## Contributors
   - [@KAboelnaga](https://github.com/KAboelnaga)

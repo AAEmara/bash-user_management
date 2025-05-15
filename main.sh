@@ -1,23 +1,33 @@
 #!/bin/bash
+
 ans=0
+
 cases(){
 	case "$1" in 1)
 		showInfo;;
 		2)
-		listUser;;
+		listUsers;;
 		3)
 		searchUser;;
 		4)
 		addUser;;
 		5)
 		deleteUser;;
+    6)
+    userDetails;;
+    7)
+    changePassword;;
+    8)
+    lockPassword;;
+    9)
+    unlockPassword;;
 		10)
 		exit 0;;
 		*)	
 		;;
 	esac
-
 }
+
 checkUser(){
 	if [[ "$1" =~ ^[a-zA-Z_][a-zA-Z0-9_-]*$ ]]; then
 		return 0
@@ -25,23 +35,42 @@ checkUser(){
 		return 1
 	fi
 }
+
 showInfo(){
-	source ./showInfo.sh
+	source ./scripts/showInfo.sh
 }
 
-listUser(){
-	source ./listUser.sh
+listUsers(){
+	source ./scripts/listUsers.sh
 }
 
 searchUser(){
-	source ./searchUser.sh
+	source ./scripts/searchUser.sh
 }
+
 addUser(){
-	source ./addUser.sh
+	source ./scripts/addUser.sh
 	
 }
+
 deleteUser(){
-	source ./deleteUser.sh
+	source ./scripts/deleteUser.sh
+}
+
+userDetails(){
+  source ./scripts/userDetails.sh
+}
+
+changePassword(){
+  source ./scripts/changePassword.sh
+}
+
+lockPassword(){
+  source ./scripts/lockPassword.sh
+}
+
+unlockPassword(){
+  source ./scripts/unlockPassword.sh
 }
 
 while [ $ans -ne 10 ]; do
@@ -62,7 +91,7 @@ while [ $ans -ne 10 ]; do
 		ans=$inp
 		cases "$ans"
 	else	
-		source ./invalidInput.sh
+		source ./scripts/invalidInput.sh
 	fi
 	
 done
